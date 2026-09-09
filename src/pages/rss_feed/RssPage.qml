@@ -20,7 +20,7 @@ AppPage {
 
     topPadding: Kirigami.Units.largeSpacing * 4
 
-    title: GP.Labels.east + GP.Labels.spacer_large + i18n("Changelogs")
+    title: GP.Labels.east + GP.Labels.spacer_large + i18n("Announcements")
 
     GP.PageNavigation {
         targetScrollbar: page.scrollBar
