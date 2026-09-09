@@ -174,7 +174,7 @@ StatefulApp.StatefulWindow {
             },
             Kirigami.Action {
 
-                text: i18n("Changelogs")
+                text: i18n("Announcements")
                 icon.name: "feed-subscribe-symbolic"
 
                 checkable: true

@@ -126,7 +126,7 @@ Kirigami.Page {
 
             FC.FormButtonDelegate {
                 id: updateButton
-                text: i18n("Update System Image and Software")
+                text: i18n("Click to update System Image and Software")
                 enabled: updateAction.enabled
 
                 onClicked: updateAction.trigger()

@@ -20,7 +20,7 @@ FC.FormCardPage {
 
     topPadding: Kirigami.Units.largeSpacing * 4
 
-    title: GP.Labels.east + GP.Labels.spacer_large + i18n("Changelogs")
+    title: GP.Labels.east + GP.Labels.spacer_large + i18n("Announcements")
 
     function grabScrollbar(item) {
         if (item.contentItem?.ScrollBar?.vertical)
