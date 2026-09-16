@@ -2,6 +2,70 @@
 <!DOCTYPE martif PUBLIC 'ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN' 'TBXcdv04.dtd'>
 <martif type="TBX" xml:lang="en_US">
   <text>
-    <body/>
+    <body>
+      <termEntry id="richter-0">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>GPU</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="uk">
+          <tig>
+            <term>графічний процесор</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="saltane-0">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>reboot</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="uk">
+          <tig>
+            <term>перезапуск</term>
+          </tig>
+          <tig>
+            <term>перезапуск системи</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="saltane-1">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>changelogs</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="uk">
+          <tig>
+            <term>перелік змін</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="saltane-2">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>rollback</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="uk">
+          <tig>
+            <term>відкат</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="saltane-3">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>console</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="uk">
+          <tig>
+            <term>консоль</term>
+          </tig>
+        </langSet>
+      </termEntry>
+    </body>
   </text>
 </martif>
