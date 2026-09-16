@@ -1,0 +1,612 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# SPDX-FileCopyrightText: 2026 Saltane <101461606+Saltane@users.noreply.github.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 15:23+0000\n"
+"PO-Revision-Date: 2026-09-16 20:11+0300\n"
+"Last-Translator: Saltane <101461606+Saltane@users.noreply.github.com>\n"
+"Language-Team: Ukrainian <101461606+Saltane@users.noreply.github.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 26.04.3\n"
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:61
+msgid "Copy to Clipboard"
+msgstr "Копіювати"
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:64
+msgid "Text Copied"
+msgstr "Текст скопійовано"
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:71
+msgid "Close"
+msgstr "Закрити"
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:71
+msgid "Warning: "
+msgstr "Попередження: "
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:75
+msgid "Error: "
+msgstr "Помилка: "
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:78
+msgid "Debug: "
+msgstr "Зневадження: "
+
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:82
+msgid "Critical Error: "
+msgstr "Критична помилка: "
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCOsRelease.qml:16
+msgctxt "button label"
+msgid "Hide os-release"
+msgstr "Сховати дані про випуск"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCOsRelease.qml:16
+msgctxt "button label"
+msgid "Display os-release"
+msgstr "Показати дані про випуск"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:15
+msgid "Display less information"
+msgstr "Показати менше інформації"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:15
+msgid "Display more information"
+msgstr "Показати більше інформації"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:26
+msgid "Current Image"
+msgstr "Поточний образ"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:35
+msgid "Last Update"
+msgstr "Останнє оновлення"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:50
+msgid "The best drivers for your GPU are provided by the Linux kernel."
+msgstr "Найліпші драйвери для Вашого графічного процесору надані ядром Linux."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:52
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:54
+msgid "The best drivers for your GPU are "
+msgstr "Найліпшими драйверами для Вашого графічного процесору є "
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:56
+msgid "Your GPU is unsupported."
+msgstr "Ваш графічний процесор не підтримується."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:75
+msgid "You have the best drivers installed."
+msgstr "Ви маєте найліпші драйвери для Вашої системи."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:79
+msgid "You do not have any nvidia drivers installed."
+msgstr "Жодних драйверів Nvidia не було встановлено."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:81
+msgid "You currently have nvidia installed."
+msgstr "Встановлено драйвер Nvidia."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:83
+msgid "You currently have nvidia-open installed."
+msgstr "Встановлено вільний драйвер Nvidia."
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:91
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:98
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:105
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:112
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:119
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:126
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:133
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:140
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:147
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:154
+msgid "loading..."
+msgstr "завантажуємо…"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:92
+msgid "Image"
+msgstr "Образ"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:99
+msgid "Vendor"
+msgstr "Виробник"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:106
+msgid "Ref"
+msgstr "Джерело"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:113
+msgid "Tag"
+msgstr "Мітка"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:120
+msgid "Branch"
+msgstr "Гілка"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:127
+msgid "Base Name"
+msgstr "Назва основи"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:134
+msgid "Fedora Version"
+msgstr "Версія Fedora"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:141
+msgid "Version"
+msgstr "Версія"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:148
+msgid "Version (Pretty)"
+msgstr "Версія (гарно)"
+
+#: /workspaces/bazzite-updater/src/components/customFormcards/FCSystemInfo.qml:155
+msgid "Release Date"
+msgstr "Дата випуску"
+
+# Використовується у стрічці новин
+#: /workspaces/bazzite-updater/src/components/customFormcards/FormCardCollapsible.qml:37
+msgid "Read more"
+msgstr "Читати далі"
+
+# Використовується у стрічці новин
+#: /workspaces/bazzite-updater/src/components/customFormcards/FormCardCollapsible.qml:45
+msgid "Read less"
+msgstr "Згорнути"
+
+#: /workspaces/bazzite-updater/src/main.cpp:129
+msgid "Bazzite Updater"
+msgstr "Центр оновлень Bazzite"
+
+#: /workspaces/bazzite-updater/src/main.cpp:131
+msgid "Updating and rebasing utility for Bazzite"
+msgstr "Інструмент оновлення та перебазування для Bazzite"
+
+#: /workspaces/bazzite-updater/src/main.cpp:133
+msgid "© 2025-2026 Robert French"
+msgstr "© 2025-2026 Роберт Френч"
+
+#: /workspaces/bazzite-updater/src/main.cpp:134
+msgid ""
+"This application can be used through a controller or keyboard to perform "
+"various update-related system tasks!"
+msgstr ""
+"Цим застосунком можна керувати з допомогою контролеру або клавіатури для викон"
+"ання оновчих завдань!"
+
+#: /workspaces/bazzite-updater/src/pages/AboutDataApp.qml:8
+msgctxt "@title"
+msgid "About Application"
+msgstr "Про застосунок"
+
+#: /workspaces/bazzite-updater/src/pages/AboutDataOS.qml:8
+#: /workspaces/bazzite-updater/src/pages/Main.qml:198
+msgctxt "About (user's OS)"
+msgid "About %1"
+msgstr "Про %1"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:20
+msgctxt "@title:window"
+msgid "Bazzite Updater"
+msgstr "Центр оновлень Bazzite"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:155
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:19
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:100
+msgid "System Update"
+msgstr "Оновлення системи"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:167
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:28
+msgid "Other Utilities"
+msgstr "Інші інструменти"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:177
+#: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:23
+msgid "Changelogs"
+msgstr "Перелік змін"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:189
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:17
+msgid "Settings"
+msgstr "Налаштування"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:207
+msgid "About Bazzite Updater"
+msgstr "Про Центр оновлень Bazzite"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:220
+msgid "Reboot System"
+msgstr "Перезапустити систему"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:231
+msgid "Quit"
+msgstr "Вийти"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:306
+msgctxt "@title:window"
+msgid "Reboot System"
+msgstr "Перезапустити систему"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:313
+msgid "This will reboot the system."
+msgstr "Це перезапустить систему."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:318
+msgid "Reboot"
+msgstr "Перезапустити"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:324
+#: /workspaces/bazzite-updater/src/pages/Main.qml:407
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:341
+msgid ""
+"The app was unable to reboot. Reboot through your system menu to apply "
+"changes."
+msgstr ""
+"Не вдалося перезапустити систему. Здійсніть перезапуск самостійно для застосув"
+"ання змін."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:360
+msgid "Exit Application"
+msgstr "Вийти із застосунку"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:367
+msgid "You must reboot to apply changes."
+msgstr "Ви мусите перезапустити систему для застосування змін."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:367
+msgid "No command is running, you may exit."
+msgstr "Жодної команди не запущено, можете закрити застосунок."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:370
+msgid ""
+"You should not exit the application until the running command completes. If "
+"you exit early, it may break your system."
+msgstr ""
+"Не варто виходити із застосунку до завершення поточних команд. Якщо вийти зара"
+"но, це може зламати Вашу систему."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:372
+msgid ""
+"If you exit the application before the running command completes, it may not "
+"apply its changes."
+msgstr ""
+"Якщо вийти із застосунку до завершення поточної команди, він може не застосува"
+"ти зміни."
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:382
+msgid "Do not show this again"
+msgstr "Не показувати це знову"
+
+#: /workspaces/bazzite-updater/src/pages/Main.qml:400
+msgctxt "dialog to exit the application"
+msgid "Exit"
+msgstr "Вийти"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:65
+msgid "Rollback Last Update"
+msgstr "Відкотити попереднє оновлення"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:75
+msgid ""
+"This will revert the last update to your system. Your user-level files such "
+"as documents and games will not be affected."
+msgstr ""
+"Це відновить попередній стан системи. Ваші користувацькі файли, як-от документ"
+"и та ігри, зачеплені не будуть."
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:83
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:91
+msgid "Initiate Rollback"
+msgstr "Розпочати відкат"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:95
+msgid "Rollback Started"
+msgstr "Відкат розпочато"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:98
+msgid "Rollback Failed."
+msgstr "Не вдалося відкотити"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:98
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+msgid "Open console"
+msgstr "Відкрити консоль"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:100
+msgid "Rollback Succeeded!"
+msgstr "Відкат завершено!"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:114
+msgid "System Image Information"
+msgstr "Дані про образ системи"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:120
+msgctxt "card to display info from os-release"
+msgid "Additional Information"
+msgstr "Додаткові дані"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:16
+msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
+msgid "Rebase to New Image"
+msgstr "Перебазувати до нового образу"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:21
+msgid "Recommended images:"
+msgstr "Рекомендовані образи:"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:61
+msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
+msgid "Image Options:"
+msgstr "Вибір образу:"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:70
+msgid " (Current)"
+msgstr " (поточний)"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:94
+msgid "Branch:"
+msgstr "Гілка:"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:95
+msgid "stable"
+msgstr "стабільна"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:109
+msgid "testing"
+msgstr "тестова"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:125
+msgid "do not change"
+msgstr "незмінна"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
+msgid "Rebase"
+msgstr "Перебазувати"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
+msgid " (Unavailable)"
+msgstr " (недоступно)"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
+msgid "Rebase failed."
+msgstr "Не вдалося перебазувати."
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/rebase_helper.cpp:161
+msgid "Rollback program was not found or failed to start."
+msgstr "Програму для відкату не знайдено або не вдалося запустити."
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "January"
+msgstr "Січень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "February"
+msgstr "Лютий"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "March"
+msgstr "Березень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "April"
+msgstr "Квітень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "May"
+msgstr "Травень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "June"
+msgstr "Червень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "July"
+msgstr "Липень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "August"
+msgstr "Серпень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "September"
+msgstr "Вересень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "October"
+msgstr "Жовтень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "November"
+msgstr "Листопад"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+msgid "December"
+msgstr "Грудень"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:111
+msgid "in the future"
+msgstr "у майбутньому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:115
+msgid "just now"
+msgstr "щойно"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+msgid "minute ago"
+msgstr "хвилину тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+msgid "minutes ago"
+msgstr "хвилин тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+msgid "hour ago"
+msgstr "годину тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+msgid "hours ago"
+msgstr "годин тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+msgid "day ago"
+msgstr "день тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+msgid "days ago"
+msgstr "днів тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+msgid "month ago"
+msgstr "місяць тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+msgid "months ago"
+msgstr "місяців тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+msgid "year ago"
+msgstr "рік тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+msgid "years ago"
+msgstr "років тому"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:45
+msgctxt "@info:placeholder"
+msgid "No changelogs have been provided."
+msgstr "Переліку змін не надано."
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:51
+msgctxt "@info:placeholder"
+msgid "Loading changelog"
+msgstr "Завантажуємо перелік змін"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:71
+msgctxt "@info:placeholder"
+msgid "Error loading changelogs:"
+msgstr "Помилка завантаження переліку змін:"
+
+#: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:76
+msgctxt "@info:placeholder"
+msgid "An error has occurred loading changelogs."
+msgstr "Сталася помилка під час завантаження переліку змін."
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:36
+msgid "Interface Settings"
+msgstr "Налаштування інтерфейсу"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:41
+msgid "Reboot on exit reminder"
+msgstr "Нагадування про перезапуск"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:42
+msgid ""
+"Display a popup when exiting the app after a command completes, reminding "
+"you to reboot to apply changes."
+msgstr ""
+"Показувати віконце з нагадуванням про перезапуск перед виходом із застосунку."
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:57
+msgid "Default fullscreen state"
+msgstr "Розмір вікна за замовчуванням"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:58
+msgid "Should the application launch in fullscreen mode?"
+msgstr "Чи повинен застосунок запускатися у повноекранному режимі?"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:73
+msgid "Default console state"
+msgstr "Стан консолі за замовчуванням"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:74
+msgid "Should the console panels start opened?"
+msgstr "Чи повинна панель із консоллю бути видима за замовчуванням?"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:91
+msgid "Restore Defaults"
+msgstr "Скинути налаштування"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:100
+msgid "OS Settings (read-only)"
+msgstr "Налаштування системи (лише для читання)"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:106
+msgid "System Update Command"
+msgstr "Команда для оновлення системи"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:112
+msgid "No system rollback command is defined."
+msgstr "Команди для відкату систему не визначено."
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:113
+msgid "System Rollback Command"
+msgstr "Команда для відкату системи"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:120
+msgid "Allow commands to be cancelled early?"
+msgstr "Дозволити скасовувати команди завчасно?"
+
+#: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:127
+msgid "Changelogs RSS feed"
+msgstr "RSS-стрічка переліку змін"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:49
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:113
+msgid "Update System Image and Software"
+msgstr "Оновити застосунки та образ системи"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:54
+msgid "System Updating"
+msgstr "Система оновлюється"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:56
+msgid "Update Started"
+msgstr "Оновлення розпочато"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+msgid "Update Failed. Check console for more details."
+msgstr "Не вдалося оновити. Перевірте консоль для докладнощів."
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:66
+msgid "Update Succeeded!"
+msgstr "Оновлення завершено!"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:68
+msgid "System Updated!"
+msgstr "Систему оновлено!"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:154
+msgctxt "label, last update to the system."
+msgid "Last Update"
+msgstr "Останнє оновлення"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:156
+msgid "Right now!"
+msgstr "Щойно!"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:172
+msgid "The System Update command is not defined."
+msgstr "Команду оновлення системи не визначено."
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:173
+msgid "Make sure the config file (/etc/bazzite-updater/config.ini) is present."
+msgstr ""
+"Переконайтеся, що файл налаштувань (/etc/bazzite-updater/config.ini) існує."
