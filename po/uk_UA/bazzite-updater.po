@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-28 15:23+0000\n"
-"PO-Revision-Date: 2026-09-16 20:11+0300\n"
+"POT-Creation-Date: 2026-09-18 18:36+0300\n"
+"PO-Revision-Date: 2026-09-18 18:56+0300\n"
 "Last-Translator: Saltane <101461606+Saltane@users.noreply.github.com>\n"
 "Language-Team: Ukrainian <101461606+Saltane@users.noreply.github.com>\n"
 "Language: uk\n"
@@ -18,31 +18,31 @@ msgstr ""
 "4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 26.04.3\n"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:61
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:63
 msgid "Copy to Clipboard"
 msgstr "Копіювати"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:64
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:66
 msgid "Text Copied"
 msgstr "Текст скопійовано"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:71
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:73
 msgid "Close"
 msgstr "Закрити"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:71
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:78
 msgid "Warning: "
 msgstr "Попередження: "
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:75
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:82
 msgid "Error: "
 msgstr "Помилка: "
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:78
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:85
 msgid "Debug: "
 msgstr "Зневадження: "
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:82
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:89
 msgid "Critical Error: "
 msgstr "Критична помилка: "
 
@@ -164,25 +164,25 @@ msgstr "Читати далі"
 msgid "Read less"
 msgstr "Згорнути"
 
-#: /workspaces/bazzite-updater/src/main.cpp:129
+#: /workspaces/bazzite-updater/src/main.cpp:113
 msgid "Bazzite Updater"
 msgstr "Центр оновлень Bazzite"
 
-#: /workspaces/bazzite-updater/src/main.cpp:131
+#: /workspaces/bazzite-updater/src/main.cpp:115
 msgid "Updating and rebasing utility for Bazzite"
 msgstr "Інструмент оновлення та перебазування для Bazzite"
 
-#: /workspaces/bazzite-updater/src/main.cpp:133
+#: /workspaces/bazzite-updater/src/main.cpp:117
 msgid "© 2025-2026 Robert French"
 msgstr "© 2025-2026 Роберт Френч"
 
-#: /workspaces/bazzite-updater/src/main.cpp:134
+#: /workspaces/bazzite-updater/src/main.cpp:118
 msgid ""
 "This application can be used through a controller or keyboard to perform "
 "various update-related system tasks!"
 msgstr ""
-"Цим застосунком можна керувати з допомогою контролеру або клавіатури для викон"
-"ання оновчих завдань!"
+"Цим застосунком можна керувати з допомогою контролеру або клавіатури для "
+"виконання оновчих завдань!"
 
 #: /workspaces/bazzite-updater/src/pages/AboutDataApp.qml:8
 msgctxt "@title"
@@ -201,8 +201,8 @@ msgid "Bazzite Updater"
 msgstr "Центр оновлень Bazzite"
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:155
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:19
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:100
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:18
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:116
 msgid "System Update"
 msgstr "Оновлення системи"
 
@@ -213,8 +213,8 @@ msgstr "Інші інструменти"
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:177
 #: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:23
-msgid "Changelogs"
-msgstr "Перелік змін"
+msgid "Announcements"
+msgstr "Оголошення"
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:189
 #: /workspaces/bazzite-updater/src/pages/settings/Settings.qml:17
@@ -256,8 +256,8 @@ msgid ""
 "The app was unable to reboot. Reboot through your system menu to apply "
 "changes."
 msgstr ""
-"Не вдалося перезапустити систему. Здійсніть перезапуск самостійно для застосув"
-"ання змін."
+"Не вдалося перезапустити систему. Здійсніть перезапуск самостійно для "
+"застосування змін."
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:360
 msgid "Exit Application"
@@ -276,16 +276,16 @@ msgid ""
 "You should not exit the application until the running command completes. If "
 "you exit early, it may break your system."
 msgstr ""
-"Не варто виходити із застосунку до завершення поточних команд. Якщо вийти зара"
-"но, це може зламати Вашу систему."
+"Не варто виходити із застосунку до завершення поточних команд. Якщо вийти "
+"зарано, це може зламати Вашу систему."
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:372
 msgid ""
 "If you exit the application before the running command completes, it may not "
 "apply its changes."
 msgstr ""
-"Якщо вийти із застосунку до завершення поточної команди, він може не застосува"
-"ти зміни."
+"Якщо вийти із застосунку до завершення поточної команди, він може не "
+"застосувати зміни."
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:382
 msgid "Do not show this again"
@@ -296,6 +296,11 @@ msgctxt "dialog to exit the application"
 msgid "Exit"
 msgstr "Вийти"
 
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:53
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:74
+msgid "Toggle Console"
+msgstr "Перемкнути консоль"
+
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:65
 msgid "Rollback Last Update"
 msgstr "Відкотити попереднє оновлення"
@@ -305,8 +310,8 @@ msgid ""
 "This will revert the last update to your system. Your user-level files such "
 "as documents and games will not be affected."
 msgstr ""
-"Це відновить попередній стан системи. Ваші користувацькі файли, як-от документ"
-"и та ігри, зачеплені не будуть."
+"Це відновить попередній стан системи. Ваші користувацькі файли, як-от "
+"документи та ігри, зачеплені не будуть."
 
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:83
 msgid "Confirm"
@@ -325,8 +330,7 @@ msgid "Rollback Failed."
 msgstr "Не вдалося відкотити"
 
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:98
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:58
 msgid "Open console"
 msgstr "Відкрити консоль"
 
@@ -343,149 +347,103 @@ msgctxt "card to display info from os-release"
 msgid "Additional Information"
 msgstr "Додаткові дані"
 
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:16
-msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
-msgid "Rebase to New Image"
-msgstr "Перебазувати до нового образу"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:21
-msgid "Recommended images:"
-msgstr "Рекомендовані образи:"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:61
-msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
-msgid "Image Options:"
-msgstr "Вибір образу:"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:70
-msgid " (Current)"
-msgstr " (поточний)"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:94
-msgid "Branch:"
-msgstr "Гілка:"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:95
-msgid "stable"
-msgstr "стабільна"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:109
-msgid "testing"
-msgstr "тестова"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:125
-msgid "do not change"
-msgstr "незмінна"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
-msgid "Rebase"
-msgstr "Перебазувати"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
-msgid " (Unavailable)"
-msgstr " (недоступно)"
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
-msgid "Rebase failed."
-msgstr "Не вдалося перебазувати."
-
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/rebase_helper.cpp:161
 msgid "Rollback program was not found or failed to start."
 msgstr "Програму для відкату не знайдено або не вдалося запустити."
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "January"
 msgstr "Січень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "February"
 msgstr "Лютий"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "March"
 msgstr "Березень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "April"
 msgstr "Квітень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "May"
 msgstr "Травень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "June"
 msgstr "Червень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "July"
 msgstr "Липень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "August"
 msgstr "Серпень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "September"
 msgstr "Вересень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "October"
 msgstr "Жовтень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "November"
 msgstr "Листопад"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "December"
 msgstr "Грудень"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:111
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:136
 msgid "in the future"
 msgstr "у майбутньому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:115
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:140
 msgid "just now"
 msgstr "щойно"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:145
 msgid "minute ago"
 msgstr "хвилину тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:145
 msgid "minutes ago"
 msgstr "хвилин тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:151
 msgid "hour ago"
 msgstr "годину тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:151
 msgid "hours ago"
 msgstr "годин тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:157
 msgid "day ago"
 msgstr "день тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:157
 msgid "days ago"
 msgstr "днів тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:163
 msgid "month ago"
 msgstr "місяць тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:163
 msgid "months ago"
 msgstr "місяців тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:168
 msgid "year ago"
 msgstr "рік тому"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:168
 msgid "years ago"
 msgstr "років тому"
 
@@ -568,20 +526,23 @@ msgstr "Дозволити скасовувати команди завчасн�
 msgid "Changelogs RSS feed"
 msgstr "RSS-стрічка переліку змін"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:49
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:113
-msgid "Update System Image and Software"
-msgstr "Оновити застосунки та образ системи"
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:45
+msgid "Start update"
+msgstr "Розпочати оновлення"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:54
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:50
 msgid "System Updating"
 msgstr "Система оновлюється"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:56
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:52
 msgid "Update Started"
 msgstr "Оновлення розпочато"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:56
+msgid "Update Failed."
+msgstr "Не вдалося оновити."
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:58
 msgid "Update Failed. Check console for more details."
 msgstr "Не вдалося оновити. Перевірте консоль для докладнощів."
 
@@ -593,20 +554,62 @@ msgstr "Оновлення завершено!"
 msgid "System Updated!"
 msgstr "Систему оновлено!"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:154
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:129
+msgid "Click to update System Image and Software"
+msgstr "Натисніть, аби оновити застосунки та образ системи"
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:170
 msgctxt "label, last update to the system."
 msgid "Last Update"
 msgstr "Останнє оновлення"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:156
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:172
 msgid "Right now!"
 msgstr "Щойно!"
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:172
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:188
 msgid "The System Update command is not defined."
 msgstr "Команду оновлення системи не визначено."
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:173
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:189
 msgid "Make sure the config file (/etc/bazzite-updater/config.ini) is present."
 msgstr ""
 "Переконайтеся, що файл налаштувань (/etc/bazzite-updater/config.ini) існує."
+
+#~ msgid "Changelogs"
+#~ msgstr "Перелік змін"
+
+#~ msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
+#~ msgid "Rebase to New Image"
+#~ msgstr "Перебазувати до нового образу"
+
+#~ msgid "Recommended images:"
+#~ msgstr "Рекомендовані образи:"
+
+#~ msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
+#~ msgid "Image Options:"
+#~ msgstr "Вибір образу:"
+
+#~ msgid " (Current)"
+#~ msgstr " (поточний)"
+
+#~ msgid "Branch:"
+#~ msgstr "Гілка:"
+
+#~ msgid "stable"
+#~ msgstr "стабільна"
+
+#~ msgid "testing"
+#~ msgstr "тестова"
+
+#~ msgid "do not change"
+#~ msgstr "незмінна"
+
+#~ msgid "Rebase"
+#~ msgstr "Перебазувати"
+
+#~ msgid " (Unavailable)"
+#~ msgstr " (недоступно)"
+
+#~ msgid "Rebase failed."
+#~ msgstr "Не вдалося перебазувати."
