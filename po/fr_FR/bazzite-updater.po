@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-28 15:23+0000\n"
+"POT-Creation-Date: 2026-09-18 17:32+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:61
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:63
 msgid "Copy to Clipboard"
 msgstr "Copier dans le presse-papiers"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:64
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:66
 msgid "Text Copied"
 msgstr "Texte copié"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:71
+#: /workspaces/bazzite-updater/src/components/console/ConsoleDrawer.qml:73
 msgid "Close"
 msgstr "Fermer"
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:71
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:78
 msgid "Warning: "
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:75
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:82
 msgid "Error: "
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:78
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:85
 msgid "Debug: "
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:82
+#: /workspaces/bazzite-updater/src/components/console/ConsoleView.qml:89
 msgid "Critical Error: "
 msgstr ""
 
@@ -161,19 +161,19 @@ msgstr ""
 msgid "Read less"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/main.cpp:129
+#: /workspaces/bazzite-updater/src/main.cpp:113
 msgid "Bazzite Updater"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/main.cpp:131
+#: /workspaces/bazzite-updater/src/main.cpp:115
 msgid "Updating and rebasing utility for Bazzite"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/main.cpp:133
+#: /workspaces/bazzite-updater/src/main.cpp:117
 msgid "© 2025-2026 Robert French"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/main.cpp:134
+#: /workspaces/bazzite-updater/src/main.cpp:118
 msgid ""
 "This application can be used through a controller or keyboard to perform "
 "various update-related system tasks!"
@@ -196,8 +196,8 @@ msgid "Bazzite Updater"
 msgstr ""
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:155
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:19
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:100
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:18
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:116
 msgid "System Update"
 msgstr ""
 
@@ -208,7 +208,7 @@ msgstr ""
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:177
 #: /workspaces/bazzite-updater/src/pages/rss_feed/RssPage.qml:23
-msgid "Changelogs"
+msgid "Announcements"
 msgstr ""
 
 #: /workspaces/bazzite-updater/src/pages/Main.qml:189
@@ -312,8 +312,7 @@ msgid "Rollback Failed."
 msgstr ""
 
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:98
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:58
 msgid "Open console"
 msgstr ""
 
@@ -330,149 +329,103 @@ msgctxt "card to display info from os-release"
 msgid "Additional Information"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:16
-msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
-msgid "Rebase to New Image"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:21
-msgid "Recommended images:"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:61
-msgctxt "Image, such as referring to Bazzite vs Bazzite-deck"
-msgid "Image Options:"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:70
-msgid " (Current)"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:94
-msgid "Branch:"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:95
-msgid "stable"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:109
-msgid "testing"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:125
-msgid "do not change"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
-msgid "Rebase"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:154
-msgid " (Unavailable)"
-msgstr ""
-
-#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebasePart.qml:162
-msgid "Rebase failed."
-msgstr ""
-
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/rebase_helper.cpp:161
 msgid "Rollback program was not found or failed to start."
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "January"
 msgstr "janvier"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "February"
 msgstr "février"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "March"
 msgstr "mars"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "April"
 msgstr "avril"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "May"
 msgstr "mai"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "June"
 msgstr "juin"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "July"
 msgstr "juillet"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "August"
 msgstr "août"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "September"
 msgstr "septembre"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "October"
 msgstr "octobre"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "November"
 msgstr "novembre"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:71
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:96
 msgid "December"
 msgstr "décembre"
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:111
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:136
 msgid "in the future"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:115
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:140
 msgid "just now"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:145
 msgid "minute ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:120
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:145
 msgid "minutes ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:151
 msgid "hour ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:126
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:151
 msgid "hours ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:157
 msgid "day ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:132
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:157
 msgid "days ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:163
 msgid "month ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:138
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:163
 msgid "months ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:168
 msgid "year ago"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:143
+#: /workspaces/bazzite-updater/src/pages/rss_feed/FCRssDelegate.qml:168
 msgid "years ago"
 msgstr ""
 
@@ -554,20 +507,23 @@ msgstr ""
 msgid "Changelogs RSS feed"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:49
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:113
-msgid "Update System Image and Software"
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:45
+msgid "Start update"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:54
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:50
 msgid "System Updating"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:56
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:52
 msgid "Update Started"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:59
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:56
+msgid "Update Failed."
+msgstr ""
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:58
 msgid "Update Failed. Check console for more details."
 msgstr ""
 
@@ -579,19 +535,23 @@ msgstr ""
 msgid "System Updated!"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:154
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:129
+msgid "Click to update System Image and Software"
+msgstr ""
+
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:170
 msgctxt "label, last update to the system."
 msgid "Last Update"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:156
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:172
 msgid "Right now!"
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:172
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:188
 msgid "The System Update command is not defined."
 msgstr ""
 
-#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:173
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:189
 msgid "Make sure the config file (/etc/bazzite-updater/config.ini) is present."
 msgstr ""
