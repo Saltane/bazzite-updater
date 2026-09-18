@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-18 17:32+0300\n"
-"PO-Revision-Date: 2026-09-18 17:38+0300\n"
+"POT-Creation-Date: 2026-09-18 18:36+0300\n"
+"PO-Revision-Date: 2026-09-18 18:56+0300\n"
 "Last-Translator: Saltane <101461606+Saltane@users.noreply.github.com>\n"
 "Language-Team: Ukrainian <101461606+Saltane@users.noreply.github.com>\n"
 "Language: uk\n"
@@ -295,6 +295,11 @@ msgstr "Не показувати це знову"
 msgctxt "dialog to exit the application"
 msgid "Exit"
 msgstr "Вийти"
+
+#: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:53
+#: /workspaces/bazzite-updater/src/pages/system_update/SystemUpdate.qml:74
+msgid "Toggle Console"
+msgstr "Перемкнути консоль"
 
 #: /workspaces/bazzite-updater/src/pages/rebase_helper/RebaseHelper.qml:65
 msgid "Rollback Last Update"
