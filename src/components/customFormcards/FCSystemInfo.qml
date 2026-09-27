@@ -1,3 +1,5 @@
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Layouts
 import org.kde.kirigamiaddons.formcard as FC
@@ -154,6 +156,36 @@ Loader {
             FC.FormTextDelegate {
                 text: OtherUtilsBackend.currentImage.datePretty["day"] + " " + OtherUtilsBackend.currentImage.datePretty["month"] + ", " + OtherUtilsBackend.currentImage.datePretty["year"] || i18n("loading...")
                 description: i18n("Release Date")
+            }
+        }
+
+        Loader {
+            id: layeredPackagesLoader
+            active: OtherUtilsBackend.layeredPackages.length != 0
+            Layout.fillWidth: true
+
+            sourceComponent: ColumnLayout {
+                spacing: 0
+                Layout.fillWidth: true
+
+                FormDelegateSeparatorFixed {
+                    above: detailedInfo.itemAboveNext
+                    below: layeredPackagesInfo.itemBelowPrev
+                }
+
+                FormDelegateCollapsible {
+                    id: layeredPackagesInfo
+                    text: expanded ? i18n("Close layered packages view") : i18n("View layered packages (%1)", OtherUtilsBackend.layeredPackages.length)
+
+                    FC.FormTextAreaDelegate {
+                        label: i18n("Layered Packages (%1):", OtherUtilsBackend.layeredPackages.length)
+                        readOnly: true
+
+                        text: OtherUtilsBackend.layeredPackages.join(", ")
+
+                        description: i18n("Layering packages is a last-resort for when there is no other way to install a package. Avoid layering packages whenever possible, as it can cause system updates to fail.")
+                    }
+                }
             }
         }
     }

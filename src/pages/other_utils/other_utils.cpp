@@ -8,6 +8,8 @@
 #include <QDate>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <qjsonparseerror.h>
+#include <qjsonvalue.h>
 #include <qlogging.h>
 #include <qprocess.h>
 #include <qtmetamacros.h>
@@ -89,6 +91,7 @@ OtherUtilsBackend::OtherUtilsBackend(QObject *parent)
     m_osImage_current = osImage::fromJson(path);
 
     setGpuDrivers();
+    checkLayeredPackages();
 }
 
 void OtherUtilsBackend::setGpuDrivers()
@@ -165,4 +168,52 @@ void OtherUtilsBackend::rollbackImage(QJSValue callback)
     };
 
     m_console->runProcess(cmd, onFinish, onError);
+}
+
+void OtherUtilsBackend::checkLayeredPackages()
+{
+    auto check = new QProcess(this);
+
+    connect(check, &QProcess::errorOccurred, [check](QProcess::ProcessError err) {
+        qWarning() << "checkLayeredPackages error:" << err << check->errorString();
+        check->deleteLater();
+    });
+
+    connect(check, &QProcess::finished, [this, check]() {
+        if (check->exitCode() != 0) {
+            check->deleteLater();
+            return;
+        }
+
+        QJsonArray deployments = QJsonDocument::fromJson(check->readAllStandardOutput()).object().value(u"deployments"_s).toArray();
+
+        for (const QJsonValue &depVal : deployments) {
+            QJsonObject depObj = depVal.toObject();
+
+            // if booted == true
+            if (depObj.value(u"booted"_s).toBool(false)) {
+                // Append "requested-packages"
+                const QJsonArray reqPkgs = depObj.value(u"requested-packages"_s).toArray();
+                for (const QJsonValue &pkg : reqPkgs) {
+                    m_layeredPackages.append(pkg.toString());
+                }
+
+                // Append "requested-local-packages"
+                const QJsonArray reqLocalPkgs = depObj.value(u"requested-local-packages"_s).toArray();
+                for (const QJsonValue &pkg : reqLocalPkgs) {
+                    m_layeredPackages.append(pkg.toString());
+                }
+
+                break; // Found current booted deployment
+            }
+        }
+
+        if (!m_layeredPackages.isEmpty()) {
+            Q_EMIT layeredPackagesChanged();
+        }
+        check->deleteLater();
+        return;
+    });
+
+    Utils::startProcess(check, {u"rpm-ostree"_s, u"status"_s, u"--json"_s});
 }

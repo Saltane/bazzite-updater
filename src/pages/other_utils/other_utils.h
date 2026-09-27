@@ -9,11 +9,12 @@
 #include <QJSValue>
 #include <QProcess>
 #include <QQmlEngine>
+#include <qcontainerfwd.h>
+#include <qjsvalue.h>
 #include <qqmlintegration.h>
 #include <qtmetamacros.h>
 
 #include "console.h"
-#include "utils.h"
 
 using namespace Qt::Literals::StringLiterals;
 
@@ -81,6 +82,12 @@ class OtherUtilsBackend : public QObject
 
     osImage m_osImage_current;
     void setGpuDrivers();
+
+    // Check for rpm-ostree layered packages
+    QStringList m_layeredPackages;
+    Q_PROPERTY(QStringList layeredPackages MEMBER m_layeredPackages NOTIFY layeredPackagesChanged)
+    Q_SIGNAL void layeredPackagesChanged();
+    void checkLayeredPackages();
 
 public:
     OtherUtilsBackend(QObject *parent = nullptr);
