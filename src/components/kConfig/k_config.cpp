@@ -8,7 +8,9 @@
 #include <qcontainerfwd.h>
 #include <qdir.h>
 #include <qevent.h>
+#include <qjsonarray.h>
 #include <qjsondocument.h>
+#include <qjsonobject.h>
 #include <qjsonvalue.h>
 #include <qlogging.h>
 #include <qobject.h>
@@ -72,6 +74,16 @@ AppConfig::AppConfig()
         }
 
         aboutData.close();
+    }
+
+    QFile rebaseFile(findConfigFile(u"bazzite-updater/rebase-targets.json"_s));
+    if (!rebaseFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Failed to open rebase-targets.json";
+    } else {
+        auto file = rebaseFile.readAll();
+        QJsonDocument doc = QJsonDocument::fromJson(file);
+        rebaseTargets = doc.array().toVariantList();
+        rebaseFile.close();
     }
 }
 

@@ -165,16 +165,28 @@ StatefulApp.StatefulWindow {
             Kirigami.Action {
 
                 text: i18n("Other Utilities")
+                icon.name: "applications-accessories-symbolic"
+
+                checkable: true
+                QQC2.ActionGroup.group: pageSelector
+
+                onTriggered: root.pageStack.initialPage = Qt.resolvedUrl("OtherUtils.qml")
+            },
+            Kirigami.Action {
+                enabled: AppConfig.ini.Rebase?.enabled === "true"
+                visible: enabled
+
+                text: i18n("Rebase Helper")
                 icon.name: "system-reboot-symbolic"
 
                 checkable: true
                 QQC2.ActionGroup.group: pageSelector
 
-                onTriggered: root.pageStack.initialPage = Qt.resolvedUrl("RebaseHelper.qml")
+                onTriggered: root.pageStack.initialPage = Qt.resolvedUrl("RebasePage.qml")
             },
             Kirigami.Action {
 
-                text: i18n("Changelogs")
+                text: i18n("Announcements")
                 icon.name: "feed-subscribe-symbolic"
 
                 checkable: true
@@ -242,7 +254,7 @@ StatefulApp.StatefulWindow {
         ]
 
         function __navigateGlobalDrawer(direction) {
-            // direction = +1 or -1, used to navigate with a controller
+            // direction = +1 or -1, used to navigate with a controller or arrow keys
 
             // Find the current page
             let currentIndex = -1;
@@ -264,7 +276,7 @@ StatefulApp.StatefulWindow {
                     return;
 
                 let item = globalDrawer.actions[newIndex];
-                if (item.checkable)
+                if (item.checkable && item.visible && item.enabled)
                     break;
             }
 
