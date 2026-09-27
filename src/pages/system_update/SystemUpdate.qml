@@ -71,7 +71,7 @@ Kirigami.Page {
         },
         Kirigami.Action {
             id: toggleConsole
-            text: "Toggle Console" + GP.Labels.spacer + GP.Labels.north
+            text: i18n("Toggle Console") + GP.Labels.spacer + GP.Labels.north
             shortcut: "F12"
             onTriggered: {
                 // hide notifications when opening the drawer
@@ -126,7 +126,7 @@ Kirigami.Page {
 
             FC.FormButtonDelegate {
                 id: updateButton
-                text: i18n("Update System Image and Software")
+                text: i18n("Click to update System Image and Software")
                 enabled: updateAction.enabled
 
                 onClicked: updateAction.trigger()
