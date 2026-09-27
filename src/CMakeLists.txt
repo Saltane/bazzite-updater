@@ -63,6 +63,7 @@ ecm_target_qml_sources(bazzite-updater
     ${COMP_DIR}/customFormcards/FCSystemInfo.qml
     ${COMP_DIR}/customFormcards/FCSystemImage.qml
     ${COMP_DIR}/customFormcards/FormDelegateSeparatorFixed.qml
+    ${COMP_DIR}/customFormcards/FormDelegateCollapsible.qml
 )
 
 target_link_libraries(bazzite-updater
