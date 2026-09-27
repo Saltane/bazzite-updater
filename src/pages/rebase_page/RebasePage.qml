@@ -47,6 +47,7 @@ AppPage {
             }
 
             FCSystemImage {
+                id: currentImage
                 url: OtherUtilsBackend.currentImage.ref
                 image: OtherUtilsBackend.currentImage.name
                 tag: OtherUtilsBackend.currentImage.branch
@@ -61,6 +62,20 @@ AppPage {
                         }
                     }
                     return [i18n("Features are unknown")];
+                }
+
+                // If the given image's features are compatible with the current one, return true.
+                // For example, this would return false when the current image has kde and the given one has gnome.
+                function compatibleImage(features: list<string>): bool {
+                    let currentFeatures = currentImage.features || [];
+
+                    if (features.includes("gnome"))
+                        return !currentFeatures.includes("kde");
+
+                    if (features.includes("kde"))
+                        return !currentFeatures.includes("gnome");
+
+                    return true;
                 }
             }
 
@@ -149,6 +164,8 @@ AppPage {
                             checkable: true
                             flat: true
 
+                            enabled: currentImage.compatibleImage([modelData])
+
                             onCheckedChanged: {
                                 if (checked) {
                                     content.selectedFeatures = content.selectedFeatures.concat([modelData]);
@@ -212,8 +229,11 @@ AppPage {
                         delegate: FC.FormCard {
                             id: rebaseImgDelegate
                             required property string name
-                            required property var features
-                            required property var tags
+                            required property list<string> features
+                            required property list<string> tags
+
+                            // TODO: Filter these out within the model, not here
+                            visible: currentImage.compatibleImage(features)
 
                             FC.FormTextDelegate {
                                 text: rebaseImgDelegate.name
