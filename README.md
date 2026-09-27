@@ -26,8 +26,7 @@
 
 By default, this interface is configured to use bazzite's `uupd` system service for updating and `bazzite-rollback-helper` for rolling back updates.
 
-- systemd version >= 258 is required for the pre-configured "service-as-program.sh" script to function.
-- This is not tested with versions of kirigami older than 6.27.0 and kirigami-addons older than 1.12.0.
+- This is not currently tested with versions of kirigami and kirigamiaddons older than Fedora's latest version.
 
 <br>
 
@@ -69,16 +68,11 @@ If you leave systemRollbackCommand blank (but still present!), it will hide that
 
 <h1 align="center">Developer Instructions</h1>
 
-I develop this project in a devcontainer with Zed and test it on bazzite by installing it as an RPM. A justfile is present for specific scripts, which can be easily run using `just`.
+I develop this project in a devcontainer with Zed and test it on bazzite by building it in a fedora distrobox and running on host. A justfile is present for specific scripts, which can be easily run using `just`.
 
 ```bash
-just build-flatpak
-just build-rpm
-```
-
-To test as an rpm:
-
-```bash
-sudo bootc usroverlay
-sudo dnf install the/rpm/package.rpm
+# enter your fedora distrobox that has the right dependencies
+just build-host
+# run-host should work in the distrobox and on the host
+just run-host
 ```

@@ -28,10 +28,21 @@ run:
     source ./build/prefix.sh
     bazzite-updater
 
-# devcontainer
-test:
-    just build
-    ctest --test-dir build --output-on-failure
+# distrobox that matches host
+build_bazzite:
+    cmake -B build_bazzite -S . -D_INCLUDE_SUBMODULES=OFF -DCMAKE_INSTALL_PREFIX=$PWD/build_bazzite/install-root -D_USE_XDG_CONFIG=ON
+    cmake --build build_bazzite --target install
+
+# host (Bazzite)
+run-host:
+    #!/usr/bin/env bash
+    source ./build_bazzite/prefix.sh
+    bazzite-updater
+
+# # devcontainer
+# test:
+#     just build
+#     ctest --test-dir build --output-on-failure
 
 # devcontainer
 update-submodules:
