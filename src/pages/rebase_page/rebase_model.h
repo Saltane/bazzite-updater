@@ -8,8 +8,24 @@
 #include <qobject.h>
 #include <qqmlengine.h>
 #include <qqmlintegration.h>
+#include <qset.h>
 #include <qtclasshelpermacros.h>
 #include <qtmetamacros.h>
+#include <qvariant.h>
+
+// Required for QVariantSet.contains(other QVariantSet) to work
+inline size_t qHash(const QVariant &key, size_t seed = 0) noexcept
+{
+    if (key.canConvert<QString>()) {
+        return qHash(key.toString(), seed);
+    }
+
+    return qHash(key.userType(), seed);
+}
+
+using QVariantSet = QSet<QVariant>;
+
+// Each QVariant in targets is: { url, name, features[], tags[] }
 
 class RebaseModel : public QObject
 {
@@ -37,15 +53,21 @@ public: // singleton methods
 
 public:
     QVariantList targets;
-    Q_PROPERTY(QVariantList targets MEMBER targets NOTIFY targetsChanged)
-    Q_SIGNAL void targetsChanged();
+    Q_PROPERTY(QVariantList targets MEMBER targets CONSTANT)
 
     QVariantList filtered;
     Q_PROPERTY(QVariantList filtered MEMBER filtered NOTIFY filteredChanged)
     Q_SIGNAL void filteredChanged();
+    void updateFiltered();
+
+    // TODO
+    // QVariantSet all_features;
+    // QVariantSet current_image_features;
 
     // change this to update filtered
-    QVariantList features;
-    Q_PROPERTY(QVariantList features MEMBER features NOTIFY featuresChanged)
+    QVariantSet m_features;
+    Q_PROPERTY(QVariantList features READ features WRITE setFeatures NOTIFY featuresChanged)
+    QVariantList features() const;
+    void setFeatures(QVariantList val);
     Q_SIGNAL void featuresChanged();
 };
