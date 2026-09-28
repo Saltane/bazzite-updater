@@ -44,6 +44,7 @@ ecm_target_qml_sources(bazzite-updater
     SOURCES
     ${PG_DIR}/Main.qml
     ${PG_DIR}/system_update/SystemUpdate.qml
+    ${PG_DIR}/system_update/UpdateSteps.qml
     ${PG_DIR}/other_utils/OtherUtils.qml
     ${PG_DIR}/rss_feed/RssPage.qml
     ${PG_DIR}/rss_feed/FCRssDelegate.qml

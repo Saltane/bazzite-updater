@@ -124,14 +124,70 @@ Kirigami.Page {
             // NOTE: The card's real width is currently bound by the fixed-width progress bar below this FC
             maximumWidth: pageContents.implicitWidth - Kirigami.Units.smallSpacing
 
-            FC.FormButtonDelegate {
+            // FC.FormButtonDelegate {
+            //     id: updateButton
+            //     text: i18n("Click to update System Image and Software")
+            //     enabled: updateAction.enabled
+
+            //     onClicked: updateAction.trigger()
+
+            //     trailing: Loader {
+            //         sourceComponent: {
+            //             if (AppState.updateRunning)
+            //                 return busyComponent;
+            //             if (AppState.commandSucceeded)
+            //                 return checkmarkComponent;
+            //             return labelComponent;
+            //         }
+
+            //         Component {
+            //             id: busyComponent
+            //             QQC2.BusyIndicator {
+            //                 id: busyIndicator
+            //                 running: AppState.updateRunning
+            //             }
+            //         }
+
+            //         Component {
+            //             id: checkmarkComponent
+            //             Kirigami.Icon {
+            //                 source: "checkmark-symbolic"
+            //                 visible: sessionStorage.updateCompleted || false
+            //             }
+            //         }
+
+            //         Component {
+            //             id: labelComponent
+            //             Kirigami.Heading {
+            //                 text: GP.Labels.south
+            //             }
+            //         }
+            //     }
+
+            //     trailingLogo.visible: !AppState.updateRunning && !AppState.commandSucceeded
+
+            //     description: {
+            //         const last_update = i18nc("label, last update to the system.", "Last Update") + ": ";
+            //         if (sessionStorage.updateCompleted)
+            //             return last_update + i18n("Right now!");
+            //         if (OtherUtilsBackend.currentImage.load_successful)
+            //             return last_update + OtherUtilsBackend.currentImage.datePretty["day"] + " " + OtherUtilsBackend.currentImage.datePretty["month"] + ", " + OtherUtilsBackend.currentImage.datePretty["year"];
+
+            //         return "";
+            //     }
+            // }
+
+            FormDelegateCollapsible {
                 id: updateButton
-                text: i18n("Click to update System Image and Software")
-                enabled: updateAction.enabled
+                button.text: i18n("Click to update System Image and Software")
+                button.enabled: updateAction.enabled
 
-                onClicked: updateAction.trigger()
+                button.onClicked: {
+                    updateAction.trigger();
+                    expanded = true;
+                }
 
-                trailing: Loader {
+                button.trailing: Loader {
                     sourceComponent: {
                         if (AppState.updateRunning)
                             return busyComponent;
@@ -164,9 +220,9 @@ Kirigami.Page {
                     }
                 }
 
-                trailingLogo.visible: !AppState.updateRunning && !AppState.commandSucceeded
+                button.trailingLogo.visible: !AppState.updateRunning && !AppState.commandSucceeded
 
-                description: {
+                button.description: {
                     const last_update = i18nc("label, last update to the system.", "Last Update") + ": ";
                     if (sessionStorage.updateCompleted)
                         return last_update + i18n("Right now!");
@@ -174,6 +230,11 @@ Kirigami.Page {
                         return last_update + OtherUtilsBackend.currentImage.datePretty["day"] + " " + OtherUtilsBackend.currentImage.datePretty["month"] + ", " + OtherUtilsBackend.currentImage.datePretty["year"];
 
                     return "";
+                }
+
+                FC.AbstractFormDelegate {
+                    contentItem: UpdateSteps {}
+                    background: Item {}
                 }
             }
 
@@ -189,13 +250,8 @@ Kirigami.Page {
                 description: i18n("Make sure the config file (/etc/bazzite-updater/config.ini) is present.")
             }
         }
-
-        QQC2.ProgressBar {
-            Layout.alignment: Qt.AlignCenter
+        Item {
             implicitWidth: Kirigami.Units.gridUnit * 19
-
-            value: (AppState.commandSucceeded) ? 1.0 : 0.0
-            indeterminate: AppState.updateRunning
         }
     }
 

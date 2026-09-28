@@ -138,10 +138,6 @@ AppPage {
 
                 delegate: FCSystemImage {
                     Layout.topMargin: Kirigami.Units.mediumSpacing
-
-                    Component.onCompleted: {
-                        console.log(features);
-                    }
                 }
             }
         }
