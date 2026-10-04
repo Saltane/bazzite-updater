@@ -73,6 +73,14 @@ void SystemUpdateBackend::runUpdate(QJSValue callback = QJSValue())
             return;
         }
 
+        // TODO UPDATESTEPS: very temporary and inefficient.
+        // A proper model needs to be used, and it needs to keep track of any modules failing.
+        updateStepsModel[0] = u"System 2 2 1"_s;
+        updateStepsModel[1] = u"Brew 2 2 1"_s;
+        updateStepsModel[2] = u"Flatpak 2 2 1"_s;
+        updateStepsModel[3] = u"UserFlatpak 2 2 1"_s;
+        updateStepsModelChanged();
+
         conclude(0, true);
     };
 
@@ -101,6 +109,54 @@ void SystemUpdateBackend::runUpdate(QJSValue callback = QJSValue())
 
         QString level = json.value(u"level"_s).toString();
         QString msg = json.value(u"msg"_s).toString();
+
+        QString module_name = json.value(u"module_name"_s).toString();
+        QString title = json.value(u"title"_s).toString();
+
+        // Parse Uupd output to neatly display progress
+        {
+            // TODO UPDATESTEPS: very temporary and inefficient.
+            // A proper model needs to be used, and it needs to keep track of any modules failing.
+            enum Progress {
+                SYSTEM,
+                BREW,
+                FLATPAK,
+                USER_FLATPAK
+            };
+            static Progress current = SYSTEM;
+
+            if (module_name == u"Brew"_s)
+                current = BREW;
+
+            else if (module_name == u"Flatpak"_s)
+                current = FLATPAK;
+
+            else if (title == u"Flatpak"_s)
+                current = USER_FLATPAK;
+
+            switch (current) {
+            case SYSTEM:
+                updateStepsModel[0] = u"System -1 2 0"_s;
+                break;
+            case BREW:
+                updateStepsModel[0] = u"System 2 2 1"_s;
+                updateStepsModel[1] = u"Brew -1 2 0"_s;
+                break;
+            case FLATPAK:
+                updateStepsModel[0] = u"System 2 2 1"_s;
+                updateStepsModel[1] = u"Brew 2 2 1"_s;
+                updateStepsModel[2] = u"Flatpak -1 2 0"_s;
+                break;
+            case USER_FLATPAK:
+                updateStepsModel[0] = u"System 2 2 1"_s;
+                updateStepsModel[1] = u"Brew 2 2 1"_s;
+                updateStepsModel[2] = u"Flatpak 2 2 1"_s;
+                updateStepsModel[3] = u"UserFlatpak -1 2 0"_s;
+                break;
+            }
+
+            updateStepsModelChanged();
+        }
 
         using namespace Console;
         LogLevel log_level = LogLevel::Warn;
