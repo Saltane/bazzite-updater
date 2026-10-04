@@ -28,16 +28,24 @@ run:
     source ./build/prefix.sh
     bazzite-updater
 
-# distrobox that matches host
-build_bazzite:
-    cmake -B build_bazzite -S . -D_INCLUDE_SUBMODULES=OFF -DCMAKE_INSTALL_PREFIX=$PWD/build_bazzite/install-root -D_USE_XDG_CONFIG=ON
-    cmake --build build_bazzite --target install
+# host (Requires Fedora44 distrobox with all necessary dependencies)
+build-f44:
+    distrobox enter Fedora44 -- bash -c "\
+        cmake -B build_bazzite -S . -D_INCLUDE_SUBMODULES=OFF -DCMAKE_INSTALL_PREFIX=\$PWD/build_bazzite/install-root -D_USE_XDG_CONFIG=ON && \
+        cmake --build build_bazzite --target install"
 
 # host (Bazzite)
-run-host:
+run-f44:
     #!/usr/bin/env bash
     source ./build_bazzite/prefix.sh
     bazzite-updater
+
+# host (Bazzite)
+brun-f44:
+    #!/usr/bin/env bash
+    just build-f44
+    source ./build_bazzite/prefix.sh
+    ./build_bazzite/install-root/bin/bazzite-updater
 
 # # devcontainer
 # test:
