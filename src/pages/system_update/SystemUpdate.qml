@@ -124,59 +124,6 @@ Kirigami.Page {
             // NOTE: The card's real width is currently bound by the fixed-width progress bar below this FC
             maximumWidth: pageContents.implicitWidth - Kirigami.Units.smallSpacing
 
-            // FC.FormButtonDelegate {
-            //     id: updateButton
-            //     text: i18n("Click to update System Image and Software")
-            //     enabled: updateAction.enabled
-
-            //     onClicked: updateAction.trigger()
-
-            //     trailing: Loader {
-            //         sourceComponent: {
-            //             if (AppState.updateRunning)
-            //                 return busyComponent;
-            //             if (AppState.commandSucceeded)
-            //                 return checkmarkComponent;
-            //             return labelComponent;
-            //         }
-
-            //         Component {
-            //             id: busyComponent
-            //             QQC2.BusyIndicator {
-            //                 id: busyIndicator
-            //                 running: AppState.updateRunning
-            //             }
-            //         }
-
-            //         Component {
-            //             id: checkmarkComponent
-            //             Kirigami.Icon {
-            //                 source: "checkmark-symbolic"
-            //                 visible: sessionStorage.updateCompleted || false
-            //             }
-            //         }
-
-            //         Component {
-            //             id: labelComponent
-            //             Kirigami.Heading {
-            //                 text: GP.Labels.south
-            //             }
-            //         }
-            //     }
-
-            //     trailingLogo.visible: !AppState.updateRunning && !AppState.commandSucceeded
-
-            //     description: {
-            //         const last_update = i18nc("label, last update to the system.", "Last Update") + ": ";
-            //         if (sessionStorage.updateCompleted)
-            //             return last_update + i18n("Right now!");
-            //         if (OtherUtilsBackend.currentImage.load_successful)
-            //             return last_update + OtherUtilsBackend.currentImage.datePretty["day"] + " " + OtherUtilsBackend.currentImage.datePretty["month"] + ", " + OtherUtilsBackend.currentImage.datePretty["year"];
-
-            //         return "";
-            //     }
-            // }
-
             FormDelegateCollapsible {
                 id: updateButton
                 button.text: i18n("Click to update System Image and Software")
@@ -184,8 +131,10 @@ Kirigami.Page {
 
                 button.onClicked: {
                     updateAction.trigger();
-                    expanded = true;
+                    // expanded = true;
                 }
+
+                expanded: SystemUpdateBackend.updateStepsModel[0] !== ""
 
                 button.trailing: Loader {
                     sourceComponent: {

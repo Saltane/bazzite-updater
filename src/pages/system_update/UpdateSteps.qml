@@ -10,40 +10,14 @@ import org.kde.kirigami as Kirigami
 ColumnLayout {
     id: root
 
-    // for testing
-    ListModel {
-        id: stepsModel
-    }
-
-    // for testing
-    Timer {
-        interval: 2000
-        running: true
-        repeat: true
-
-        property int index: 0
-
-        onTriggered: {
-            index += 1;
-            const count = index;
-            const newItem = `Layer_${count} ${count} ${count ^ 2} ${count % 3}`;
-            stepsModel.append({
-                "modelData": newItem
-            });
-
-            if (stepsModel.count > 5) {
-                stepsModel.remove(0);
-            }
-        }
-    }
-
     Repeater {
-        // model: SystemUpdateBackend.updateStepsModel
-        model: stepsModel
+        model: SystemUpdateBackend.updateStepsModel
 
         delegate: RowLayout {
             id: del
             required property string modelData
+
+            visible: modelData
 
             readonly property string module: modelData.split(" ")[0]
             readonly property int progress: parseInt(modelData.split(" ")[1])
@@ -58,6 +32,7 @@ ColumnLayout {
 
             ProgressBar {
                 Layout.fillWidth: true
+                indeterminate: del.progress === -1
                 value: del.progress
                 to: del.total
             }
