@@ -36,6 +36,7 @@
 #include <qqml.h>
 
 #include <qqmlpropertymap.h>
+#include <qquickstyle.h>
 #include <qstylehints.h>
 #include <unistd.h>
 
@@ -48,6 +49,8 @@ using namespace Qt::Literals::StringLiterals;
 
 // Handle non-gui functionality: Replace the bazzite-updater process with the selected process defined by the config.ini
 void commandLine(char *argv[], QCoreApplication &app);
+
+void setup_theming();
 
 int main(int argc, char *argv[])
 {
@@ -84,27 +87,7 @@ int main(int argc, char *argv[])
     // exits early if the command line options are used
     commandLine(argv, app);
 
-    if (Utils::KDE_SESSION) {
-        if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
-            QQuickStyle::setStyle(u"org.kde.desktop"_s);
-        }
-    } else {
-        bool useBreeze = false;
-        if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
-            QQuickStyle::setStyle(u"org.kde.breeze"_s);
-            useBreeze = true;
-        }
-
-        if (qEnvironmentVariableIsEmpty("QT_STYLE_OVERRIDE")) {
-            QApplication::setStyle(u"breeze"_s);
-            useBreeze = true;
-        }
-
-        if (useBreeze) {
-            // Reliably respects color/icon scheme outside of KDE
-            static auto dbus = Utils::DbusListener();
-        }
-    }
+    setup_theming();
 
     KLocalizedString::setApplicationDomain("bazzite-updater");
     QCoreApplication::setOrganizationName(u"UniversalBlue"_s);
@@ -197,4 +180,17 @@ void commandLine(char *argv[], QCoreApplication &app)
 
     perror("execvp failed");
     exit(EXIT_FAILURE);
+}
+
+void setup_theming()
+{
+    if (!Utils::KDE_SESSION) {
+        // If the Qt style is manually being set by anything, don't mess with it
+        if (qEnvironmentVariableIsSet("QT_QPA_PLATFORMTHEME") || qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_STYLE")
+            || qEnvironmentVariableIsSet("QT_STYLE_OVERRIDE"))
+            return;
+
+        QQuickStyle::setStyle(u"org.kde.breeze"_s);
+        new Utils::DbusListener(qGuiApp);
+    }
 }
